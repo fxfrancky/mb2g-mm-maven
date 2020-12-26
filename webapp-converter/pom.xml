@@ -12,16 +12,10 @@
     <artifactId>webapp-converter</artifactId>
     <packaging>jar</packaging>
 
-    <properties>
-        <mapstruct.version>1.4.1.Final</mapstruct.version>
-        <maven.compiler.plugin>3.8.1</maven.compiler.plugin>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <version>${mapstruct.version}</version>
         </dependency>
         <dependency>
             <groupId>guru.springframework</groupId>
@@ -40,7 +34,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.plugin}</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
@@ -48,7 +41,6 @@
                         <path>
                             <groupId>org.mapstruct</groupId>
                             <artifactId>mapstruct-processor</artifactId>
-                            <version>${mapstruct.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>

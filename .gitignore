@@ -71,6 +71,7 @@ local.properties
 /target/
 .flattened-pom.xml
 *target/*
+web-api/target/
 ######################
 # Gradle
 ######################
